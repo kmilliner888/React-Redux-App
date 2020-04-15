@@ -7,16 +7,14 @@ const Bored = (props) => {
     console.log("Bored props", props);
     return (
         <div className="bored-container">
-            <div className="bored-button">
-                <button onClick={()=> props.getActivity()}>Click Here.</button>
-            </div>
+            
             <div className="activity">
                 <h1>{props.activity.activity}</h1>
-                <h2>{props.activity.accessibility}</h2>
                 <h2>{props.activity.type}</h2>
                 <h2>{props.activity.participants}</h2>
-                <h2>{props.activity.price}</h2>
-                <h2>{props.activity.link}</h2>
+            </div>
+            <div className="bored-button">
+                <button onClick={()=> props.getActivity()}>Click Here For Ideas!</button>
             </div>
         </div>
     )

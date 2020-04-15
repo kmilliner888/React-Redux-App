@@ -10,8 +10,6 @@ const Bored = (props) => {
             
             <div className="activity">
                 <h1>{props.activity.activity}</h1>
-                <h2>{props.activity.type}</h2>
-                <h2>{props.activity.participants}</h2>
             </div>
             <div className="bored-button">
                 <button onClick={()=> props.getActivity()}>Click Here For Ideas!</button>
